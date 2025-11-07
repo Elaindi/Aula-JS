@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JS</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo JavaScript</h1>
+    <h2>Eventos JavaScript</h2>
+
+    <p id="texto"></p>
+
+    <button ondblclick="eventoDBLclick()">Clique aqui</button>
+    <br><br><br><br>
+
+    <select id="itens">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>
+    </select>
+
+    <br><br><br><br><br>
+
+    <div id="teste" onmouseout="viraAzul()" onmousemove="adicionaTexto()" onmouseover="viraVermelho()" 
+        style="margin: auto; width: 80%; height: 200px; background: rgb(14, 240, 135);">
+    </div>
+
+    <br><br>
+
+    <input 
+        onchange="mudou()" 
+        id="campoTexto" 
+        type="text" 
+        placeholder="Digite alguma coisa" 
+        value="Já vem com texto" 
+        style="padding: 20px; font-size: 20px;"
+    >
+
+    <p>
+        <script>
+            document.write('Oi <u>escrito com document.write</u>');
+        </script>
+    </p>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
